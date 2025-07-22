@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Web</title>
+<style>
+body {
+  background-image: url('pomegranate.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Reset margins and paddings 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;*/
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #c74a83;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+/* Container for images and buttons */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.image-item img {
+  width: 200px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.image-item button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Welcome to My website</h1>
+
+<div class="image-container">
+  <div class="image-item">
+    <img src="ganesh.jpeg" alt="Image 1">
+    <button onclick="goToImageInfo('image1_info.html')">Ganesh</button>
+  </div>
+  <div class="image-item">
+    <img src="bhagava.jpeg" alt="Image 2">
+    <button onclick="goToImageInfo('image2_info.html')">Bhagwa</button>
+  </div>
+  <div class="image-item">
+    <img src="aarakta.jpeg" alt="Image 3">
+    <button onclick="goToImageInfo('image3_info.html')">Aarakta</button>
+  </div>
+  <!-- Add more image items as needed -->
+</div>
+
+<script>
+  function goToImageInfo(url) {
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>
